@@ -39,13 +39,6 @@ private:
     QVector<int> BS_state;
 
     //trackers state
-    struct Tracker {
-        int index = 0;
-        int batteryPercent = 0;
-        int activity = 0;
-        QString serial;
-    };
-    Tracker trackers[16];
     QVector<uint> trackers_index; //array of trackers indices
     vr::TrackedDevicePose_t device_pose_T[vr::k_unMaxTrackedDeviceCount];
     QVector<StateTR> trackers_struct;
